@@ -1,5 +1,4 @@
 
-
 ```JavaScript
 $(document).ready(function(){
 	var somevalue;
@@ -11,10 +10,8 @@ REPORT ZHELLOWORLD.
 WRITE 'Hello, world!'.
 ```
 
-```AGS Script
-DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-surface.DrawString(0, 100, Game.NormalFont, "Hello, world!");
-surface.Release();
+```
+Display("Hello, world!");
 ```
 
 ```APL
