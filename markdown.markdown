@@ -1,3 +1,3 @@
-- [ ] checkbox 1
-- [ ] checkbox 2
-- [ ] checkbox 3
+![alt text](https://octicons.github.com/icon/hubot "Alt")
+[Hubot](https://octicons.github.com/icon/hubot)
+@[Hubot](https://octicons.github.com/icon/hubot)
