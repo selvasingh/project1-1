@@ -6,8 +6,17 @@ $(document).ready(function(){
 });
 ```
 
+```ABAP
+REPORT ZHELLOWORLD.
+WRITE 'Hello, world!'.
 ```
-$(document).ready(function(){
-	var somevalue;
-});
+
+```AGS Script
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+surface.DrawString(0, 100, Game.NormalFont, "Hello, world!");
+surface.Release();
+```
+
+```APL
+'Hello, world!'
 ```
