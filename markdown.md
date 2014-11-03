@@ -1,6 +1,6 @@
 
 ```JavaScript
-\\JavaScript
+//JavaScript
 $(document).ready(function(){
 	var somevalue;
 });
@@ -15,6 +15,7 @@ WRITE 'Hello, world!'.
 echo "Hello World"
 ```
 ```APL
+ APL
 'Hello, world!'
 ```
 ```C#
