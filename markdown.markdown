@@ -1,3 +1,5 @@
-![alt text](https://octicons.github.com/icon/hubot "Alt")
-[Hubot](https://octicons.github.com/icon/hubot)
-@[Hubot](https://octicons.github.com/icon/hubot)
+```JavaScript
+$(document).ready(function(){
+	var somevalue;
+});
+```
