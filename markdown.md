@@ -2,7 +2,7 @@
 ```JavaScript
 //JavaScript
 $(document).ready(function(){
-	var somevalue;
+	console.log('Hello, world!');
 });
 ```
 ```ABAP
