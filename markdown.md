@@ -1,20 +1,24 @@
 
 ```JavaScript
+\\JavaScript
 $(document).ready(function(){
 	var somevalue;
 });
 ```
 ```ABAP
+* ABAP
 REPORT ZHELLOWORLD.
 WRITE 'Hello, world!'.
 ```
-```
-Display("Hello, world!");
+```BASH
+# BASH
+echo "Hello World"
 ```
 ```APL
 'Hello, world!'
 ```
 ```C#
+//C#
 using System;
 class Program
 {
