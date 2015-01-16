@@ -1,4 +1,4 @@
-<properties title="" pageTitle="MS Open Tech Top Open Source Questions" description="required" metaKeywords="" services="" solutions="" documentationCenter="" authors="Your GitHub account" videoId="" scriptId="" manager="required" />
+<properties title="" pageTitle="Top Open Source Questions" description="Answering top questions about Microsoft and Open Source" metaKeywords="Microsoft Open Source" services="" solutions="" documentationCenter="" authors="rginn" videoId="" scriptId="" manager="required" />
 
 <tags ms.service="required" ms.devlang="may be required" ms.topic="article" ms.tgt_pltfrm="may be required" ms.workload="required" ms.date="mm/dd/yyyy" ms.author="Your MSFT alias or your full email address" />
 
@@ -6,12 +6,10 @@
 
 ----------
 
-
-
 - [What is Microsoft’s perspective on open source?]
 - [What is Microsoft’s open source strategy?]
 - [How has Microsoft evolved its overall strategy regarding open source?] 
-- [You talk so much about openness and collaboration with open source. Are you saying MS is not going to be a proprietary software company anymore? Will the company ever open its entire technology stack?  [This question is usually asked as *When will you open source Windows*?]]
+- [You talk so much about openness and collaboration with open source. Are you saying MS is not going to be a proprietary software company anymore? Will the company ever open its entire technology stack?] This question is usually asked as *When will you open source Windows*?
 - [There is a perception that Microsoft shifts gears on open source frequently, with a sense of schizophrenia on patent issues and competitive marketing campaigns. How do we know the overall strategy isn’t going to change tomorrow?] 
 - [What is Microsoft’s perspective on Linux?]
 - [Why was Microsoft Open Technologies created?]
