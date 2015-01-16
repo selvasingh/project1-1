@@ -13,8 +13,6 @@
 - [Why was Microsoft Open Technologies created?]
 - [What is Microsoft’s position on standards?]
  
-
-
 ## What is Microsoft’s perspective on open source? ##
 
 Microsoft is open to open source. More and more, customers, partners and the industry understand that the work we are doing with open source is about helping customers and enabling a rich and robust ecosystem of developers and partners. We enable open source on our platforms and encourage open source developers to continue to think of Windows and Windows Phone as platforms for them to develop on. 
