@@ -2,7 +2,7 @@
 
 <tags ms.service="na" ms.devlang="na" ms.topic="article" ms.tgt_pltfrm="na" ms.workload="na" ms.date="01/15/2015" ms.author="rginn" />
 
-# Top Open Source Questions #
+![MS Open Tech](https://github.com/capfei/project1/blob/master/images/MS%20Open%20Tech%20Logo.png)# Top Open Source Questions #
 
 - [What is Microsoft’s perspective on open source?]
 - [What is Microsoft’s open source strategy?]
