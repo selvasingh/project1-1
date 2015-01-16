@@ -4,8 +4,6 @@
 
 # Top Open Source Questions #
 
-----------
-
 - [What is Microsoft’s perspective on open source?]
 - [What is Microsoft’s open source strategy?]
 - [How has Microsoft evolved its overall strategy regarding open source?] 
