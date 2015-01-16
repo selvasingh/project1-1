@@ -1,6 +1,6 @@
-<properties title="" pageTitle="Top Open Source Questions" description="Answering top questions about Microsoft and Open Source" metaKeywords="Microsoft Open Source" services="" solutions="" documentationCenter="" authors="rginn" videoId="" scriptId="" manager="required" />
+<properties title="" pageTitle="Top OSS questions for //opensource messaging" description="Answering top questions about Microsoft and Open Source" metaKeywords="Microsoft Open Source" services="" solutions="" documentationCenter="" authors="rginn" videoId="" scriptId="" manager="required" />
 
-<tags ms.service="required" ms.devlang="may be required" ms.topic="article" ms.tgt_pltfrm="may be required" ms.workload="required" ms.date="mm/dd/yyyy" ms.author="Your MSFT alias or your full email address" />
+<tags ms.service="na" ms.devlang="na" ms.topic="article" ms.tgt_pltfrm="na" ms.workload="na" ms.date="01/15/2015" ms.author="rginn" />
 
 # Top Open Source Questions #
 
@@ -19,7 +19,6 @@
 
 ## What is Microsoft’s perspective on open source? ##
 
- 
 Microsoft is open to open source. More and more, customers, partners and the industry understand that the work we are doing with open source is about helping customers and enabling a rich and robust ecosystem of developers and partners. We enable open source on our platforms and encourage open source developers to continue to think of Windows and Windows Phone as platforms for them to develop on. 
 
 ## What is Microsoft’s open source strategy? ##
