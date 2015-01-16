@@ -53,11 +53,11 @@ Microsoft supports thousands of standards in its products and actively participa
 
 
 <!--Anchors-->
-[What is Microsoft’s perspective on open source?]: #What-is-Microsofts-perspective-on-open-source
-[What is Microsoft’s open source strategy?]: #What-is-Microsofts-open-source-strategy
-[How has Microsoft evolved its overall strategy regarding open source?]: #How-has-Microsoft-evolved-its-overall-strategy-regarding-open-source
-[You talk so much about openness and collaboration with open source. Are you saying MS is not going to be a proprietary software company anymore? Will the company ever open its entire technology stack?]: #You-talk-so-much-about-openness
-[There is a perception that Microsoft shifts gears on open source frequently, with a sense of schizophrenia on patent issues and competitive marketing campaigns. How do we know the overall strategy isn’t going to change tomorrow?]: #There-is-a-perception-that-Microsoft-shifts-gears-on-open-source-frequently
-[What is Microsoft’s perspective on Linux?]: #What-is-Microsofts-perspective-on-Linux
-[Why was Microsoft Open Technologies created?]: #Why-was-Microsoft-Open-Technologies-created
-[What is Microsoft’s position on standards?]: #What-is-Microsofts-position-on-standards
+[What is Microsoft’s perspective on open source?]: #what-is-Microsofts-perspective-on-open-source
+[What is Microsoft’s open source strategy?]: #what-is-Microsofts-open-source-strategy
+[How has Microsoft evolved its overall strategy regarding open source?]: #how-has-Microsoft-evolved-its-overall-strategy-regarding-open-source
+[You talk so much about openness and collaboration with open source. Are you saying MS is not going to be a proprietary software company anymore? Will the company ever open its entire technology stack?]: #you-talk-so-much-about-openness
+[There is a perception that Microsoft shifts gears on open source frequently, with a sense of schizophrenia on patent issues and competitive marketing campaigns. How do we know the overall strategy isn’t going to change tomorrow?]: #there-is-a-perception-that-Microsoft-shifts-gears-on-open-source-frequently
+[What is Microsoft’s perspective on Linux?]: #what-is-Microsofts-perspective-on-Linux
+[Why was Microsoft Open Technologies created?]: #why-was-Microsoft-Open-Technologies-created
+[What is Microsoft’s position on standards?]: #what-is-Microsofts-position-on-standards
