@@ -53,7 +53,7 @@ To create the **`package.json`** file, in Node.js command prompt, **`cd`** into 
 cd project1
 npm init
 ```
-This will prompt you to provide values for the **`package.json`** fields.
+This will prompt you to provide values for the **`package.json`** fields. Since 'project1' is already being used, I will use 'capfei-project1'.
 ```bash
 name: (project1) capfei-project1
 version: (1.0.0)
@@ -127,7 +127,7 @@ Creating a scoped package is similar to creating an unscoped package, except you
 ```
 Example:
 ```
-@capfei/project1
+@capfei/capfei-project1
 ```
 When publishing scoped packages, by default, they are private. Publishing private modules does require a paid account. You can publish public scoped modules for free by setting the access to public.
 ```bash
