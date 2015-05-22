@@ -124,6 +124,6 @@ https://www.npmjs.com/package/project-name/access (for unscoped packages)
 
 <!--Anchors-->
 [Node.js and npm]: #node.js-and-npm
-[Create a package from an existing GitHub repository]: #create-a-package-from-an-existing-gitHub-repository
+[Create a package from an existing GitHub repository]: #create-a-package-from-an-existing-github-repository
 [Publishing to npm]: #publishing-to-npm
 [Scoped packages]: #scoped-packages
