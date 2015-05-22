@@ -21,6 +21,8 @@ Once Node.js has installed, run the Node.js command prompt.
 
 If you haven't created an npm account, you can create one at [npmjs.org](https://www.npmjs.org "https://www.npmjs.org") or by using the **`npm adduser`** command. If you already have an account, you can use  **`npm login`**. Both will prompt you for a username and password.
 
+Node.js command prompt does not have `git` commands available by default. You will need to run a separate command prompt like GitShell or you can edit the `nodevars.bat` file. Follow these [instructions](https://gist.github.com/nycdotnet/f7d7b8de0c55b7081cb0) on how to do this.
+
 
 ## Create a package from an existing GitHub repository
 
@@ -48,7 +50,7 @@ entry point: (index.js)
 test command: 
 git repository: (https://github.com/capfei/project1.git)
 keywords:
-author:
+author: capfei
 license: (ISC)
 About to write to \project1\package.json:
 
@@ -107,7 +109,11 @@ Your package is now published and available on [npmjs.org](https://www.npmjs.org
 
 Creating a scoped package is similar to creating an unscoped package, except you will add the scope to the name when creating the **`package.json`** file.
 ```
-@username/project-name
+@username/name
+```
+Example:
+```
+@capfei/project1
 ```
 When publishing scoped packages, by default, they are private. Publishing private modules does require a paid account. You can publish public scoped modules for free by setting the access to public.
 ```bash
@@ -117,9 +123,9 @@ If you have a paid account, you can publish private modules and change the acces
 
 ![](https://github.com/capfei/project1/blob/master/images/npm_private_button.PNG)
 ```
-https://www.npmjs.com/package/@username/project-name/access (for scoped packages)
+https://www.npmjs.com/package/@username/name/access (for scoped packages)
 or
-https://www.npmjs.com/package/project-name/access (for unscoped packages)
+https://www.npmjs.com/package/name/access (for unscoped packages)
 ```
 
 <!--Anchors-->
