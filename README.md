@@ -21,6 +21,18 @@ Once Node.js has installed, run the Node.js command prompt.
 
 If you haven't created an npm account, you can create one at [npmjs.org](https://www.npmjs.org "https://www.npmjs.org") or by using the **`npm adduser`** command. If you already have an account, you can use  **`npm login`**. Both will prompt you for a username and password.
 
+Next, check to make sure the name you want to use is not already taken. 
+```bash
+npm view package-name-you-want-to-use
+```
+If the name is not taken, you will an error message:
+```bash
+npm ERR! 404 'package-name-you-want-to-use' is not in the npm registry.
+```
+If it is taken, the contents of the **`package.json`** file will be listed. 
+
+You can also check name availability in your web browser: https://registry.npmjs.org/package-name-you-want-to-use. Again, the contents of the **`package.json`** will be listed, if the name is taken. Otherwise, you will get an error page. 
+
 Node.js command prompt does not have `git` commands available by default. You will need to run a separate command prompt like GitShell or you can edit the `nodevars.bat` file. Follow these [instructions](https://gist.github.com/nycdotnet/f7d7b8de0c55b7081cb0) on how to do this.
 
 
@@ -43,7 +55,7 @@ npm init
 ```
 This will prompt you to provide values for the **`package.json`** fields.
 ```bash
-name: (project1)
+name: (project1) capfei-project1
 version: (1.0.0)
 description: Test
 entry point: (index.js)
@@ -55,7 +67,7 @@ license: (ISC)
 About to write to \project1\package.json:
 
 {
-	"name": "project1",
+	"name": "capfei-project1",
 	"version": "1.0.0",
 	"description": "Test",
 	"main": "index.js",
@@ -103,6 +115,8 @@ Publish to the npm registry.
 npm publish
 ```
 Your package is now published and available on [npmjs.org](https://www.npmjs.org "https://www.npmjs.org").
+
+![](https://github.com/capfei/project1/blob/master/images/published.PNG)
 
 
 ## Scoped Packages
