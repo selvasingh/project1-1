@@ -120,7 +120,7 @@ git push && git push --tags
 ```
 *A [tag] was added to match the package version.*
 
-To do the same process if you are using GitHub for Windows, you will first need to [commit your changes] then follow the steps on [creating a release]. You can use an existing tag or create a new one to add to a branch or a specific commit.
+To do the same process in [GitHub for Windows], you will first need to [commit your changes] then follow the steps on [creating a release]. You can use an existing tag or create a new one to add to a branch or a specific commit.
 
 Once you have your package ready for the world to see, publish it to the npm registry with **`npm publish`** command.
 ```bash
