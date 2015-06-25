@@ -1,10 +1,10 @@
 <properties title="" pageTitle="NPMJS" description="Basic steps for creating and publishing packages to npm" metaKeywords="" services="" solutions="" documentationCenter="" authors="capfei" videoId="" scriptId="" manager="required" />
 
-<tags ms.service="" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="06/22/2015" ms.author="capfei" />
+<tags ms.service="" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="06/25/2015" ms.author="capfei" />
 
 # NPMJS #
 
-This guide provides basic steps for creating and publishing scoped and unscoped packages to [npmjs.org] on Windows machines.
+This guide provides basic steps for creating and publishing scoped and non-scoped packages to [npmjs.org] on Windows machines.
 
  - [Node.js and npm]
  - [Create a package from an existing GitHub repository]
@@ -16,53 +16,53 @@ This guide provides basic steps for creating and publishing scoped and unscoped 
 
 Download and install Node.js and npm from [nodejs.org].
 
-Once Node.js has installed, run "Node.js command prompt". 
+Once Node.js has installed, launch "Node.js command prompt". 
 ![][nodejs command prompt]
 
-If you haven't created a npm account, you can create one at [npmjs.org] or by using the **`npm adduser`** command. If you try to create an account with a username already in use, you will get an error.  
+If you haven't created a npm account, you can create one at [npmjs.org] or by using `npm adduser` command. If you try to create an account with a username already in use, you will get an error message.  
 
-Use the **`npm login`** command, if you already have an account. Both `adduser` and `login` will prompt you for a username, password and email address.
+Use `npm login` command, if you already have an account. Both `adduser` and `login` will prompt you for a username, password and email address.
 
-Next, check to make sure the package name you want to use is not already taken. 
+You will need to check if the package name you want to use is not already taken. To check, use `npm view` command and the desired package name. The project name I will be using is, "capfei-project1".
 ```bash
-npm view package-name
+npm view capfei-project1
 ```
-If the name is not taken, you will an error message:
+If the name is not taken, you will get an error message stating it is not in the registry:
 ```bash
-npm ERR! 404 'package-name' is not in the npm registry.
+npm ERR! 404 'capfei-project1' is not in the npm registry.
 ```
-If it is taken, the contents of the **`package.json`** file will be listed. 
+If the name is taken, the contents of the `package.json` file will be listed.
 
-You can also check name availability with https://registry.npmjs.org/ and typing https://registry.npmjs.org/ adding the name you wish to use in the address bar of your web browser. 
+You can also check name availability in your web browser by typing https://registry.npmjs.org/  and the package name you wish to use in the address bar. 
 
 Example:
 ```
-https://registry.npmjs.org/package-name
+https://registry.npmjs.org/capfei-project1
 ```
-If the name is taken, the contents of the **`package.json`** will be listed. Otherwise, you will get an error page. 
+If the name is taken, the contents of the `package.json` will be displayed in browser or it will ask you to download a `.json` file. If the name is not taken, you will get an error page. 
 
-Node.js command prompt does not have `git` commands available by default. You will need to run a separate command-line client like GitShell or use a GUI like [GitHub for Windows].
+Node.js command prompt does not have `git` commands available by default. You will need to run a separate command-line client or use a GUI like [GitHub for Windows].
 
 
 ## Create a package from an existing GitHub repository
 
-Creating a package from your GitHub repository is fairly simple. First, you will need to clone your repository locally through methods like [GitHub for Windows] or command-line.
+Creating a package from your GitHub repository is fairly simple. First, clone your repository locally through methods like [GitHub for Windows] or command-line.
 
 **GitHub for Windows:**
 
 ![Clone in GitHub Windows][GitHubWinClon]
 
 **command-line:**
-```
+```Shell
 git clone https://github.com/capfei/project1.git
 ```
-To create the **`package.json`** file, in Node.js command prompt, **`cd`** into your repository then use the command **`npm init`**.
-```bash
+To create the `package.json` file, in Node.js command prompt, `cd` into your repository then use the command `npm init`.
+```Shell
 cd project1
 npm init
 ```
-This will prompt you to provide values for the **`package.json`** fields.
-```bash
+This will prompt you to provide values for the `package.json` fields.
+```JSON
 name: (project1) capfei-project1
 version: (1.0.0)
 description: Test
@@ -93,16 +93,14 @@ About to write to \project1\package.json:
 	},
 	"homepage": "https://github.com/capfei/project1#readme"
 }
-
-Is this ok? (yes) 
 ```
-You can edit the **`package.json`** file to add any additionational fields needed. Please see [Specifics of npm's package.json handling] on the [npmjs.org].
+You can edit the `package.json` file to add any additional fields needed or change existing values. Read [Specifics of npm's package.json handling] on the [npmjs.org] to learn more about the fields.
 
-Next, since I didn't specify my own entry point ([main]), the default is **`index.js`** and needs to be created. This file will be loaded when your module is required. 
-```javascript
-//Simple demo function
+Next, since I didn not specify my own entry point ([main]), the default is `index.js` and needs to be created. This file will be loaded when your module is required. 
+```JavaScript
+//A simple function
 module.exports = function () {
-	console.log("Hello");	
+	console.log('Hello');	// prints 'Hello'
 };
 ``` 
 
@@ -112,7 +110,7 @@ module.exports = function () {
 Before publishing your package, you will need to commit and push any changes to your repository. 
 
 **command-line:**
-```bash
+```Shell
 git add package.json index.js
 git commit -m "add v1 package"
 git tag 1.0.0
@@ -120,10 +118,10 @@ git push && git push --tags
 ```
 *A [tag] was added to match the package version.*
 
-To do the same process if you are using GitHub for Windows, you will first need to [commit your changes] then follow the steps on [creating a release]. You can use an existing tag or create a new one to add to a branch or a specific commit.
+To do the same process in [GitHub for Windows], you will first need to [commit your changes] then follow the steps on [creating a release]. You can use an existing tag or create a new one to add to a branch or a specific commit.
 
-Once you have your package ready for the world to see, publish it to the npm registry with **`npm publish`** command.
-```bash
+Once you have your package ready for the world to see, publish it to the npm registry with `npm publish` command.
+```Shell
 npm publish
 ```
 Your package is now published and available on [npmjs.org].
@@ -133,25 +131,32 @@ Your package is now published and available on [npmjs.org].
 
 ## Scoped Packages
 
-Creating a [scoped package] is similar to creating an unscoped package, except you will add the scope to the name when creating the **`package.json`** file.
+Creating a [scoped package] is similar to creating non-scoped package, except you will add the scope to the package name when creating the `package.json` file.
 ```
-@username/name
+@username/package-name
 ```
 Example:
+```JSON
+name: (project1) @capfei/capfei-project1
+version: (1.0.0)
+description: Test
+...
 ```
-@capfei/project1
-```
-When publishing scoped packages, by default, they are private. Publishing private modules does require a paid account. You can publish public scoped modules for free by setting the access to public.
-```bash
+When publishing scoped packages, by default, they are private. Publishing private modules currently requires a paid account. You can publish public scoped modules for free by setting the access to public.
+```Shell
 npm publish --access=public
 ```
-If you have a paid account, you can publish [private modules] and change the access to public with the same **`access`** command or on [npmjs.org] in the 'Collaborators' section for the package.
+If you have a paid account, you can publish [private modules] and change the access to public with the `access` command or on [npmjs.org] in the 'Collaborators' section for the package.
 
 ![][npm private setting]
+
+Scoped Package:
+```HTML
+https://www.npmjs.com/package/@username/packagename/access 
 ```
-https://www.npmjs.com/package/@username/name/access (for scoped packages)
-or
-https://www.npmjs.com/package/name/access (for unscoped packages)
+Non-scoped Package:
+```HTML
+https://www.npmjs.com/package/packagename/access
 ```
 
 <!--Anchors-->
